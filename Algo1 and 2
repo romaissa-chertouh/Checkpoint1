@@ -1,0 +1,45 @@
+// Algorithme1
+voy =[o,u,i,a,y,e];
+sumvoy=0;
+sum=0;
+sent =Lire('Enter a sentence with a dot at the end');
+
+
+si sent[sent.length]=='.' faire {
+    pour i de 0 à sent.length faire {
+        si sent[i]!=' ' faire {
+            sum =sum+1;
+        }
+        pour j de 0 à voy.length faire{
+        si sent[i]==voy[j] faire{
+            sumvoy=sumvoy+1;
+        }
+    }
+    }
+} 
+Ecrire(Voici la somme);
+Ecrire(sum);
+Ecrire(Voici la somme des voyelles);
+Ecrire(sumvoy);
+
+
+//Algorithme 2
+sum=0;
+selpos=0;
+selset=0;
+rep='yes';
+tant que rep=="yes"  faire{
+selselt=lire("selectionnez le set 1 ou 2")
+si selset==1 faire{
+    selpos=lire('quelle est la position du nbr à ajouter'){
+        sum=sum+set1[selpos+1];
+    }
+
+}
+sinon{
+    selpos=lire('quelle est la position du nbr à ajouter ')
+        sum=sum+set2[selpos+1];
+}
+}
+
+ecrire(sum);
